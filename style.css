@@ -13,7 +13,7 @@ body {
     Font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    background-color:#c4defd;
+    background-color:#94979a;
     color: #ffffff;
     line-height: 1.7;
 }
@@ -42,7 +42,40 @@ body {
    .theme-button img {
     margin-left: 10px;
    }
+  
+   .theme-text h3 {
+    font-size: 68px;
+    color: #212529;
+    margin-bottom: 15px;
+   }
+   .theme-text p {
+    color: #212529;
+   }
+   .theme-text h3 span {
+    position: relative;
+    z-index: 1;
+   }
+   .theme-text h3 span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(img/element.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+@media (max-width: 991px){
+.theme-text {
+text-align: center;
+}
+.theme-text h3 {
+    font-size: 36px;
+}
+}
 /*
 header css
 */
@@ -131,3 +164,20 @@ font-size: 52px;
 }
 
 }
+
+/*managment area css*/
+.management-area {
+    background-color: #ffffff;
+    padding: 140px 0;
+   }
+   .work-management {
+    margin-top: 100px;
+   }
+
+   @media (max-width: 991px) {
+    .management-area .theme-button {
+        margin-bottom: 30px;
+    }
+    .work-management {
+        margin-top: 60px;
+   }
